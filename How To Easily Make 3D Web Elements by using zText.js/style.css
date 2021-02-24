@@ -1,0 +1,40 @@
+*
+{
+	margin: 0;
+	padding: 0;	
+	box-sizing: border-box;
+	font-family: consolas;
+}
+body
+{
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+h3
+{
+	font-size: 8em;	
+}
+h3 .z-layer:first-child
+{
+	color: #f44336;
+}
+h3 .z-layer
+{
+	color: #b73229;
+}
+img{
+	position: relative;
+	max-width: 200px;
+	margin: 30px;
+}
+.z-layer:first-child
+{
+	filter: brightness(1);
+}
+.z-layer
+{
+	filter: brightness(0.7);
+}

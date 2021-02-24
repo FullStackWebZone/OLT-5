@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	
+	</head>
+	<body>
+		<h3 class="emoji-layers">👩😘🤠💕</h3>
+		<h3 class="text-layers">Cool</h3>
+		<h3 class="img-layers">
+			<img src="img.jpg">
+		</h3>
+		<script src="ztext.min.js"></script>
+		<script type="text/javascript">
+			var text = new Ztextify(".text-layers", {
+				depth: "50px",
+				layers: 80,
+				fade: true,
+				direction: "forwards",
+				// direction: "backwards",
+				eventDirection: "reverse",
+				event: "pointer",
+				eventRotation: "35deg"
+			});
+
+			var emoji = new Ztextify(".emoji-layers", {
+				depth: "50px",
+				layers: 80,
+				fade: false,
+				direction: "forwards",
+				// direction: "backwards",
+				eventDirection: "default",
+				event: "pointer",
+				eventRotation: "35deg"
+			});
+
+			var img = new Ztextify(".img-layers", {
+				depth: "100px",
+				layers: 200,
+				fade: false,
+				direction: "forwards",
+				// direction: "backwards",
+				eventDirection: "default",
+				event: "pointer",
+				eventRotation: "35deg"
+			});
+		</script>
+	</body>
+</html>
